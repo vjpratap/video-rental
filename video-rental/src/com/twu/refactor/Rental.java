@@ -25,7 +25,6 @@ public class Rental {
     }
 
     public int addFrequentRenterPoints(Customer customer) {
-        // add bonus for a two day new release rental
         int frequentRenterPoints = 1;
         if (isNewRelease() && daysRented > 1)
             frequentRenterPoints++;
